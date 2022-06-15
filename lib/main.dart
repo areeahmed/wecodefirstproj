@@ -8,10 +8,16 @@ class HelloKurdistanApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       home: Scaffold(
         body: Center(
-          child: Text("Hello Kurdistan")
+          child: Text(
+            "Hello Kurdistan",
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+              color: Colors.red,
+            ),
+            ),
         ),
       ),
     );
