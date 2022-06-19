@@ -8,7 +8,7 @@ class HelloKurdistanApp extends StatefulWidget {
 
 class _HelloKurdistanAppState extends State<HelloKurdistanApp> {
   String name = "Ari Ahmed";
-
+  int R = 255, G = 190, B = 143 ; double O = 100;
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -42,6 +42,7 @@ class _HelloKurdistanAppState extends State<HelloKurdistanApp> {
               style: TextStyle(
                 fontFamily: 'alumni',
                 fontSize: 25,
+                color: Color.fromRGBO(R, G, B, O)
               ),
             ),
             Container(
@@ -52,9 +53,15 @@ class _HelloKurdistanAppState extends State<HelloKurdistanApp> {
                 if(name == "Kurdistan")
                 {
                   name = "Ari Ahmed";
+                  R = 199;
+                  G = 127;
+                  B = 75;
                 }
                 else if(name == "Ari Ahmed"){
                   name = "Kurdistan";
+                  R = 255;
+                  G = 190;
+                  B = 143;
                 }
                 
                 print(name);
