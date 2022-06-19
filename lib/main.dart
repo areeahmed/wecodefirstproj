@@ -1,25 +1,8 @@
 import 'package:flutter/material.dart';
-void main() {
-  runApp(const HelloKurdistanApp());
-}
+import 'package:wecodefirstproj/src/Hello_Kurdistan.dart';
 
-class HelloKurdistanApp extends StatelessWidget {
-  const HelloKurdistanApp({Key? key}) : super(key: key);
+//TODO: init firebase
+//TODO: blah blah blah
+void main() => runApp(const HelloKurdistanApp());
 
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text(
-            "Hello Kurdistan",
-            style: TextStyle(
-              fontWeight: FontWeight.bold,
-              color: Colors.red,
-            ),
-            ),
-        ),
-      ),
-    );
-  }
-}
+
