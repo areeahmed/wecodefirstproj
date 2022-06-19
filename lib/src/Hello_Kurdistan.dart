@@ -8,7 +8,7 @@ class HelloKurdistanApp extends StatelessWidget {
       debugShowCheckedModeBanner : false,
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Hello', textAlign: TextAlign.center,),
+          title: const Center(child: Text('My First Project'),),
         ),
         body: Center(
           child:Column(
