@@ -3,6 +3,6 @@ import 'package:wecodefirstproj/src/Hello_Kurdistan.dart';
 
 //TODO: init firebase
 //TODO: blah blah blah
-void main() => runApp(const HelloKurdistanApp());
+void main() => runApp(HelloKurdistanApp());
 
 

@@ -1,6 +1,13 @@
 import 'package:flutter/material.dart';
-class HelloKurdistanApp extends StatelessWidget {
-  const HelloKurdistanApp({Key? key}) : super(key: key);
+class HelloKurdistanApp extends StatefulWidget {
+  HelloKurdistanApp({Key? key}) : super(key: key);
+
+  @override
+  State<HelloKurdistanApp> createState() => _HelloKurdistanAppState();
+}
+
+class _HelloKurdistanAppState extends State<HelloKurdistanApp> {
+  String name = "Ari Ahmed";
 
   @override
   Widget build(BuildContext context) {
@@ -14,7 +21,7 @@ class HelloKurdistanApp extends StatelessWidget {
           child:Column(
           children: [
             Container(
-              margin: const EdgeInsets.fromLTRB(20, 250, 20, 20),
+              margin: const EdgeInsets.fromLTRB(20, 200, 20, 20),
               decoration: BoxDecoration(
                 image: const DecorationImage(
                   image:  NetworkImage(
@@ -25,18 +32,36 @@ class HelloKurdistanApp extends StatelessWidget {
                 style: BorderStyle.solid
                 
               ),
-              borderRadius: const BorderRadius.all(Radius.circular(25))
+              borderRadius: const BorderRadius.all(Radius.circular(100))
              ),
              width: 300,
              height: 171,
             ),
-            const Text(
-              "Hello Kurdistan",
+             Text(
+              "Hello $name",
               style: TextStyle(
                 fontFamily: 'alumni',
                 fontSize: 25,
               ),
             ),
+            Container(
+              margin: EdgeInsets.fromLTRB(20, 30, 20, 20),
+              child: ElevatedButton(onPressed: () {
+                print(name);
+              setState(() {
+                if(name == "Kurdistan")
+                {
+                  name = "Ari Ahmed";
+                }
+                else if(name == "Ari Ahmed"){
+                  name = "Kurdistan";
+                }
+                
+                print(name);
+              });
+            },
+             child: Text("Change the name",))
+            )
           ],
         ),
       ),
