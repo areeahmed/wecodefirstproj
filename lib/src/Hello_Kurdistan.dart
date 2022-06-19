@@ -13,8 +13,8 @@ class HelloKurdistanApp extends StatelessWidget {
         body: Center(
           child:Column(
           children: [
-            Spacer(),
             Container(
+              margin: const EdgeInsets.fromLTRB(20, 250, 20, 20),
               decoration: BoxDecoration(
                 image: const DecorationImage(
                   image:  NetworkImage(
@@ -30,7 +30,6 @@ class HelloKurdistanApp extends StatelessWidget {
              width: 300,
              height: 171,
             ),
-            const Spacer(flex: 1,),
             const Text(
               "Hello Kurdistan",
               style: TextStyle(
@@ -38,7 +37,6 @@ class HelloKurdistanApp extends StatelessWidget {
                 fontSize: 25,
               ),
             ),
-            const Spacer(),
           ],
         ),
       ),
