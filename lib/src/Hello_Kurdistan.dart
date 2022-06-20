@@ -46,9 +46,9 @@ class _HelloKurdistanAppState extends State<HelloKurdistanApp> {
               ),
             ),
             Container(
-              margin: EdgeInsets.fromLTRB(20, 30, 20, 20),
+              margin: const EdgeInsets.fromLTRB(20, 30, 20, 20),
               child: ElevatedButton(onPressed: () {
-                print(name);
+                
               setState(() {
                 if(name == "Kurdistan")
                 {
@@ -64,10 +64,10 @@ class _HelloKurdistanAppState extends State<HelloKurdistanApp> {
                   B = 143;
                 }
                 
-                print(name);
+                
               });
             },
-             child: Text("Change the name",))
+             child: const Text("Change the name",))
             )
           ],
         ),
